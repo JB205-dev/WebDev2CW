@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+</head>
+<body>
+    <h1>{{title}}</h1>
+        {{#entries}}
+            <div class="text-right">
+                <a href="/new-entry" class="btn btn-primary">
+                    Create a new Goal
+                </a>
+            </div>
+            <div>
+                {{date}}
+            </div>
+            <div>
+                {{goal}}
+            </div>
+            <div>
+                {{goalBreakdown}}
+            </div>
+            <div>
+                {{achievements}}
+            </div>
+            <div class="card-text">
+                Written by <a href="/posts/?user={{user}}">{{user}}</a>, on
+                {{published}}
+            </div>
+            <hr> 
+        {{/entries}}
+        {{^entries}}
+        No entries yet.
+        {{/entries}}    
+   </body>
+</html>

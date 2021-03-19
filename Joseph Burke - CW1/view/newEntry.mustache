@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    {{header}}
+</head>
+    <body class="container">
+        <h2>Write a new Training Goal</h2>
+            <form method="post" role="form">
+                <div class="form-group">
+                    <label for="user">User</label>
+                    <input type="text" class="form-control" id="user"
+                    name="user" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="text" class="form-control" id="date"
+                    name="date" placeholder="Enter the Date" required>
+                </div>
+                <div class="form-group">
+                    <label for="goal">Goal</label>
+                    <input type="text" class="form-control" id="goal"
+                    name="goal" placeholder="Goal name" required>
+                </div>
+                <div class="form-group">
+                    <label for="goalbreakdown">Goal Breakdown</label>
+                    <textarea class="form-control" id="goalbreakdown" name="goalbreakdown"
+                    placeholder="Enter your goals here." rows="3" required>
+                </textarea>
+                </div>
+                <div class="form-group">
+                    <label for="achievements">Achievements</label>
+                    <textarea class="form-control" id="achievements" name="achievements"
+                    placeholder="Enter your achievements here." rows="3" required>
+                </textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Post entry" class="btn btn-primary">
+                </div>
+            </form>
+    </body>
+</html>
