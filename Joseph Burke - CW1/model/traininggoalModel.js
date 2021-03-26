@@ -48,7 +48,7 @@ class TrainingGoals {
     }
 
     getAllEntries() {
-        return new Promise(( resolve, reject) => {
+        return new Promise((resolve, reject) => {
             this.db.find({}, function(err, entries) {
                 if (err) {
                     reject(err);
@@ -116,7 +116,13 @@ class TrainingGoals {
     }
 
     updateEntriesByUser() {
-        this.db.update({ 'user': user,  }, )
+        this.db.update({'user': user}, {}, function(err, docsRem) {
+            if (err) {
+                console.log('Error updating user entry.');
+            } else {
+                console.log(docsRem, 'Entry Updated in the database for user: ' + user);
+            }
+        })
     }
        
 }
