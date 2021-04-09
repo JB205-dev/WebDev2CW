@@ -1,6 +1,6 @@
 const guestbookDAO = require('../model/traininggoalModel');
 const db = new guestbookDAO();
-db.init();
+// db.init();
 
 exports.entries_list = function(req, res) {
     // res.send('<h1>Not yet implemented: show a list of guest book entries.</h1>');
