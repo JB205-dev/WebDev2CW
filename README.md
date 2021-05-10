@@ -25,6 +25,8 @@ node index
 Then go to the following link to open the application:
 [LocalHost](https://localhost:3000/)
 
+All required modules to run the application are stored within the app so no further installation is needed.
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
